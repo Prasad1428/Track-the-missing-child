@@ -108,7 +108,7 @@ function Find() {
               method: 'POST',
               url: 'https://api.edenai.run/v2/image/face_compare', // Use the provided API endpoint
               headers: {
-                Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMjkzODkwMWMtYWExMi00MDc2LTgwNjEtYzQ0ZjE1NjcwYTJiIiwidHlwZSI6ImFwaV90b2tlbiJ9.-Pmb30JifXFvKquaWUyKk-8B9Aa3yYsRgMAsvu5wT1w', // Replace with your actual API key
+                Authorization: 'Bearer "you eden AI api key"', // Replace with your actual API key
   
               },
               data: {
