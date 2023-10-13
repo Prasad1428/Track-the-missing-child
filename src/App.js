@@ -1,24 +1,42 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './Navbar';
+import Find from './Find';
+import Upload from './Upload';
+import News from './News';
+import Stats from './Statistics';
+import Feed from './Feed';
+import {BrowserRouter as Router,Routes,Route} from "react-router-dom"
+
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Routes>
+      <Route path='/' element={
+       <div>
+        <Navbar />
+        <Find/>
+        <Feed/>
+       </div>
+      }/>
+      <Route path='/Upload' element={
+       <div>
+        <Navbar />
+        <Upload/>
+       </div>
+      }/>
+      <Route path='/Help' element={
+       <div>
+        <Navbar />
+        <News/>
+       </div>
+      }/>
+
+    </Routes>
+      
     </div>
+    </Router>
   );
 }
 

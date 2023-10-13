@@ -1,0 +1,62 @@
+/* Navbar.css */
+a{
+  text-decoration: none;
+}
+.Navbar {
+    background-color: #111;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items : center;
+    flex-wrap:nowrap;
+    
+  }  
+  .logo-div{
+    text-decoration: none;
+    padding:5px;
+    position: absolute;
+    top:5px;
+    left:0px;
+  }
+  #logo{
+    padding: 5px;
+    width: 32px;
+    height: 32px;
+  }
+  #logo-title{
+    color:white;
+    text-decoration: none;
+    margin :2px;
+    font-size: xx-small;
+  }
+  .nav-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left:150px;
+    flex-wrap: nowrap;
+    object-fit: contain;
+  }
+  .nav-item {
+    font-size:1rem;
+    color: white;
+    padding:20px 40px 20px;
+    transition: background-color 0.2s ease;
+  }
+  .nav-item:hover {
+    background-color: black;
+  }
+  
+  .account {
+    position: absolute;
+    top: 13px;
+    right: 20px;
+  }
+  
+  #account-png {
+    width: 32px;
+    height: 32px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  

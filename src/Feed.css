@@ -1,0 +1,89 @@
+/* Global styles */
+body {
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+.feed{
+    display: flex;
+}
+/* Styles for the scrolling feed container */
+.scrolling-feed {
+  margin-top: 195px;
+  max-width: 400px;
+  height: 700px;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: var(--background-color); /* Change the feed background color */
+  border: none;
+}
+#scrolling-header{
+    display: fixed;
+    position: absolute;
+    top:70px;
+    right: 10px;
+    z-index: 2;
+    width: 400px;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+/* Hide the scrollbar in webkit-based browsers */
+.scrolling-feed::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.scrolling-feed::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/* Styles for each individual feed entry */
+.feed-entry {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px; /* Decrease border radius for a less rounded appearance */
+  padding: 15px; /* Decrease padding for less width around the edges */
+  margin-bottom: 20px;
+  background-color: var(--background-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the child's name */
+.feed-entry h2 {
+  font-size: 1.8rem;
+  margin-top: 0;
+}
+
+/* Styles for child information */
+.feed-entry p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+/* Style for the child's photo */
+.feed-entry img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Add responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .scrolling-feed {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Update font sizes for smaller screens */
+  .feed-entry h2 {
+    font-size: 1.5rem;
+  }
+
+  .feed-entry p {
+    font-size: 1rem;
+  }
+}
